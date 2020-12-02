@@ -1,11 +1,11 @@
 {
     "manifest_version": 2,
     "name": "MUNI IS spam remover",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "description": "Removes annoying spam in the feed of MUNI IS",
     "content_scripts": [
         {
-            "matches": ["https://is.muni.cz/auth/"],
+            "matches": ["https://is.muni.cz/auth/*"],
             "js": ["background.js"]
         }
     ],

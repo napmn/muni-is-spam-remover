@@ -3,13 +3,19 @@
     "name": "MUNI IS spam remover",
     "version": "1.0.2",
     "description": "Removes annoying spam in the feed of MUNI IS",
+    "permissions": ["storage", "activeTab", "nativeMessaging"],
+    "background": {
+        "scripts": ["background.js"]
+    },
     "content_scripts": [
         {
             "matches": ["https://is.muni.cz/auth/*"],
-            "js": ["background.js"]
+            "js": ["popup.js", "pageLoaded.js"],
+            "css": ["popup.css"]
         }
     ],
     "browser_action": {
+        "default_popup": "popup.html",
         "default_icon": {
             "16": "icons/icon16.png"
         }

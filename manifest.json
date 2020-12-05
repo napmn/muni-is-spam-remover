@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "MUNI IS spam remover",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "description": "Removes annoying spam in the feed of MUNI IS",
     "permissions": ["storage", "activeTab", "nativeMessaging"],
     "background": {
